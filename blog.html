@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="md:max-w-7xl md:mx-auto ">
+    <!-- var let const section -->
+    <section>
+        <div class="mt-10 mx-10">
+            <h3 class="text-3xl font-semibold mb-4">Discuss the scope of var, let, and const</h3>
+            <div class="grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div>
+                    <h1 class="text-3xl font-semibold">var scope</h1>
+                    var are global scope or functional scope when we declare var variabel that't hoisted in global scope
+                    that's why we can access under the functional scope or block scope.if var variabel declared in block
+                    scope that is accessible outside the block. we can re-assign the value of var variable. <br>
+                    here is the Example.
+
+                    <div class="bg-gray-300 p-5 my-5  ">
+                        var greeter = "hey how"; <br>
+
+                        function newFunction() { <br>
+                        var hello = greeter +" are you";
+                        }
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-semibold">let scope</h1>
+                    let are a block scope it accessible under the block scope.we can re-assign value under the block
+                    scope.let are not access outside the block. <br>
+                    here is the Example.
+                    <div class="bg-gray-300 p-5 my-5  ">
+                        let greeting = "say Hi";<br>
+                        let times = 4;<br>
+                        if (times > 3) {<br>
+                        let hello = "say Hello";<br>
+                        console.log(hello);// "say Hello"<br>
+                        } <br>
+                        console.log(hello) // hello is not defined <br>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1 class="text-3xl font-semibold">Const scope</h1>
+                        const are block scope. It is access under the block scope.const are constant variable its value
+                        never re-assign. <br>
+                        here is the Example.
+                        <div class="bg-gray-300 p-5 my-5  ">
+                            const greeting = "say Hi";<br>
+                        const times = 4;<br>
+                        if (times > 3) {<br>
+                        const hello = "say Hello";<br>
+                        console.log(hello);// "say Hello"<br>
+                        } <br>
+                        console.log(hello) // hello is not defined <br>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="mt-5 mx-10">
+            <h3 class="text-3xl font-semibold mb-4">Tell us the use cases of null and undefined</h3>In JavaScript null and undefined indicates the absense of value. null and undefined is a keyword in JavaScript.
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4">undefined:</h3>
+                    <li>we declare a variabel and can't assign a value.when we use the variable thats is undefined</li>
+                    <li>set value to undefined we get undefined</li>
+                    <li>when need to return in a function but we can't return that's we get undefined</li>
+                    <li>when need parameter pass but we can't pass parameter that't we get undefined</li>
+                    Example use cases:
+                    <li>when property doesn't exists that's why we get undefined <br> const person = {} <br>console.log(person.name);//undefined</li>
+                    <li>when array index not in array that's why we get undefined <br>const num=[0,1,2] <br>console.log(num[3]);//undefined</li>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4">null:</h3>
+                    <li>when we can set a value null we get null</li>
+                    <li>null is used when we need to set the value null.</li>
+                        value intentionally has no value.</li><br>
+                    Example use cases:
+                    <li>When we want to set value in no value then we set null: <br> let user = null;</li>
+                    <li>When need object value set null: <br> user.name = null;</li>
+                    <li>When api fetch no data in returna: <br> const data = fetchSomeData(); <br> if (data ===
+                        null) {
+                        /* handle no data */ }</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mb-10 mt-12 mx-10">
+            <h3 class="text-3xl font-semibold mb-4">What do you mean by REST API?</h3>
+            Rest API is an architectural style of application programming interface(API)
+            .Rest API is function with application and device to communucate with each other.With the help of rest API we can perform CRUD opertion.with the help of HTTPs method we can use get method to get the rest API data.post method is create a new resource.put/patch method we can update data.then we can delete data
+        </div>
+    </section>
+</body>
+
+</html>
