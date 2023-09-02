@@ -52,7 +52,7 @@ const displayCard = (displayParameter) => {
                 <figure>
                 <div class="relative flex flex-col">
                     <img class="w-80 h-52" src="${items.thumbnail}" alt="Shoes" />
-                    <p id="showTime" class="absolute bottom-2 right-5 bg-[black] text-white rounded">${showTime ? showTime : ''}</p>
+                    <p id="remove-text" class="absolute bottom-2 right-5 bg-[black] text-white rounded">${showTime ? showTime : ''}</p>
                 </div> 
                 </figure>
                 <div class="mt-5">
